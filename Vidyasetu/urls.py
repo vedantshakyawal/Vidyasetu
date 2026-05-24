@@ -16,7 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from Vidyasetu_backend.views import login_view,add_user
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('login/',login_view, name='login'),
+    path('users/add/', add_user, name='add_user'),
 ]
