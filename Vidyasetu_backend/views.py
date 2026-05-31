@@ -10,7 +10,7 @@ from firebase_admin import firestore
 from .serializers import UserSerializer
 
 # Initialize Firestore client
-db = firestore.client()
+db = firestore.client(database_id="vidyasetu")
 
 # Secret code for Faculty/Admin registration
 INSTITUTION_CODE = "SAIBALAJI_2026"
