@@ -26,6 +26,7 @@ def login_view(request):
     role = request.data.get('role')
     device_id = request.data.get('device_id')
 
+# testgit s
     user = authenticate(username=username, password=password)
     
     if user is not None:
