@@ -1,1 +1,0 @@
-pip install django djangorestframework django-cors-headers python-decouple firebase-admin gunicorn
